@@ -25,7 +25,7 @@ const Tourism = () =>{
                 <br />
                 <span data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" className='m-auto block h-[5px] w-[70px]  bg-[red]'></span>
                 <br />
-                <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" className='text-white text-center w-[60%] m-auto text-[20px]'>{t('turizmp')}</p>
+                <p data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" className='text-white text-center w-[60%] m-auto text-[10px] sm:text-[20px]'>{t('turizmp')}</p>
                 
                 <div data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="50" className=' m-auto container flex flex-wrap mt-[40px] text-center max-w-[1000px]'>
                     <div className=' m-auto'>
