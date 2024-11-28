@@ -1,24 +1,47 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import About from './about/about';
 import './App.css';
+import Countries from './countries/countries';
+import Footer from './footer/footer';
+import Loader from './laoder/laoder';
+import Navbar from './navbar/navbar';
+import OneSwiper from './oneswiper/oneswiper';
+import Works from './our works/works';
+import Services from './servicess/services';
+import Tourism from './tourism/tourism';
+import Travels from './travels/travels';
+import TwoSwiper from './twoswiper/twoswiper';
+
 
 function App() {
+
+  const [loader, setLoader] = useState(true);
+  useEffect(() => {
+    const res = setTimeout(() => setLoader(false), 3000);
+    return () => clearTimeout(res);
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      {
+        loader ? <Loader/> : (
+          <>
+          <Navbar/>
+          <OneSwiper/>
+          <TwoSwiper/>
+          <About/>
+          <Countries/>
+          <Works/>
+          <Tourism/>
+          <Services/>
+          <Travels/>
+          <Footer/>
+          </>
+        )
+      }
     </div>
+    
   );
 }
 
