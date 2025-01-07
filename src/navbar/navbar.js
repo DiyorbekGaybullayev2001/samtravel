@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import logo from '../imgs/logo imgs/logo.png'
+import logo from '../imgs/logo imgs/logotip.png'
 import navbarbg from '../imgs/navbar-bg.png'
 import { AiTwotoneUpCircle } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -60,7 +60,7 @@ const Navbar = () =>{
 
                 <div className="h-[70px]">
                     <a href="/">
-                        <img className="h-[70px] cursor-pointer" src={logo} alt="logo" />
+                        <img className="h-[80px] w-[100px] cursor-pointer" src={logo} alt="logo" />
                     </a>
                 </div>
                     <img className="absolute -z-10 h-[70px] w-[30%] m-auto opacity-35" src={navbarbg} alt="bg"/>

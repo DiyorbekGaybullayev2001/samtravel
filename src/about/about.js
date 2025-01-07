@@ -1,6 +1,6 @@
 import React from 'react';
 import img from '../imgs/about img/about.jpg';
-import imglogo from '../imgs/logo imgs/logo.png';
+import imglogo from '../imgs/logo imgs/logotip.png';
 import { useTranslation } from 'react-i18next';
 
 const About = () => {
@@ -19,11 +19,11 @@ const About = () => {
         <h1  className="text-4xl md:text-5xl font-bold text-black">{t('about')}</h1>
         <span className="w-16 h-[6px] mt-[10px] bg-red-500 block"></span>
         <br />
-        <p className="font-semibold text-lg md:text-xl"> {t('abouttext1')}</p>
+        <p className="font-semibold text-sm md:text-xl"> {t('abouttext1')}</p>
         <br />
-        <p className="font-semibold text-lg md:text-xl"> {t('abouttext2')} </p>
+        <p className="font-semibold text-sm md:text-xl"> {t('abouttext2')} </p>
         <br />
-        <p className="font-semibold text-lg md:text-xl"> {t('abouttext3')}</p>
+        <p className="font-semibold text-sm md:text-xl"> {t('abouttext3')}</p>
         <br />
         <span className="block h-1 w-3/4 bg-red-500"></span>
       </div>
@@ -33,7 +33,7 @@ const About = () => {
         data-aos="fade-left"
         data-aos-duration="2000"
         data-aos-delay="50"
-        className="w-full md:w-1/2 px-4 md:px-8 relative h-[400px] md:h-[600px]"
+        className="w-full md:w-1/2 p-4 md:px-8 relative h-[400px] md:h-[600px]"
       >
         <img
           className="absolute z-0 h-full w-full object-cover rounded-lg shadow-lg"
@@ -41,7 +41,7 @@ const About = () => {
           alt="About Us"
         />
         <img
-          className="absolute z-10 w-[150px] md:w-[250px] bottom-4 md:bottom-8 left-4 md:left-8"
+          className="absolute z-10 w-[130px] md:w-[250px] right-0 md:right-0"
           src={imglogo}
           alt="Logo"
         />

@@ -120,7 +120,7 @@ const Footer = () => {
               className="ml-3 text-sm hover:text-red-500"
               href="https://www.instagram.com/easy.visa.uzb"
             >
-              Easy Viza Uzb
+              Samarqand viza tour
             </a>
           </div>
           <div
@@ -134,7 +134,7 @@ const Footer = () => {
               className="ml-3 text-sm hover:text-red-500"
               href="https://t.me/Ataev_Bakhodir90"
             >
-              t.me/Ataev_Bakhodir90
+              t.me/Trevel-samarqand
             </a>
             {/* <a
               className="ml-3 text-sm hover:text-red-500"
@@ -154,7 +154,7 @@ const Footer = () => {
               className="ml-3 text-sm hover:text-red-500"
               href="https://t.me/easyvizatourconsulting"
             >
-              t.me/Easy viza tour
+              t.me/Samarqand viza tour
             </a>
           </div>
           <div

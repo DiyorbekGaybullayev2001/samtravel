@@ -1,5 +1,5 @@
 import React from "react";
-import vdstart  from '../laoder/vidio start/video.mp4'
+import vdstart  from '../laoder/vidio start/video2.mp4'
 
 
 const Loader = () =>{

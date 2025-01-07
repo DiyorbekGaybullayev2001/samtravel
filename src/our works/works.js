@@ -1,7 +1,7 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-import logo from '../imgs/logo imgs/logo.png'
+import logo from '../imgs/logo imgs/logotip.png'
 
 import tur1 from '../our works/videos/Tur-1.mp4'
 import tur2 from '../our works/videos/Tur-2.mp4'
@@ -26,17 +26,17 @@ const Works =()=>{
 
                 <div className='relative w-[300px] h-[400px]'>
                     <video className='absolute -z-1 w-[300px] h-[400px] object-cover' src={tur1} controls ></video>
-                    <img className='absolute h-[100px] w-[140px] ml-[-50px] mt-[-20px]' src={logo} alt="" />
+                    <img className='absolute h-[110px] w-[150px] ml-[-70px] mt-[-40px]' src={logo} alt="" />
                 </div>
 
                 <div className='relative w-[300px] h-[400px]'>
                     <video className='absolute -z-1 w-[300px] h-[400px] object-cover' src={tur2} controls ></video>
-                    <img className='absolute h-[100px] w-[140px] ml-[-50px] mt-[-20px]' src={logo} alt="" />
+                    <img className='absolute h-[110px] w-[150px] ml-[-70px] mt-[-40px]' src={logo} alt="" />
                 </div>
 
                 <div className='relative w-[300px] h-[400px]'>
                     <video className='absolute -z-1 w-[300px] h-[400px] object-cover' src={tur3} controls ></video>
-                    <img className='absolute h-[100px] w-[140px] ml-[-50px] mt-[-20px]' src={logo} alt="" />
+                    <img className='absolute h-[110px] w-[150px] ml-[-70px] mt-[-40px]' src={logo} alt="" />
                 </div>
 
             </div>
@@ -48,17 +48,17 @@ const Works =()=>{
 
                 <div className='relative w-[300px] h-[400px]'>
                     <video className='absolute -z-1 w-[300px] h-[400px] object-cover' src={client1v} controls ></video>
-                    <img className='absolute h-[100px] w-[140px] ml-[-50px] mt-[-20px]' src={logo} alt="" />
+                    <img className='absolute h-[110px] w-[150px] ml-[-70px] mt-[-40px]' src={logo} alt="" />
                 </div>
 
                 <div className='relative w-[300px] h-[400px]'>
                     <video className='absolute -z-1 w-[300px] h-[400px] object-cover' src={client2v} controls ></video>
-                    <img className='absolute h-[100px] w-[140px] ml-[-50px] mt-[-20px]' src={logo} alt="" />
+                    <img className='absolute h-[110px] w-[150px] ml-[-70px] mt-[-40px]' src={logo} alt="" />
                 </div>
 
                 <div className='relative w-[300px] h-[400px]'>
                     <video className='absolute -z-1 w-[300px] h-[400px] object-cover' src={client3v} controls ></video>
-                    <img className='absolute h-[100px] w-[140px] ml-[-50px] mt-[-20px]' src={logo} alt="" />
+                    <img className='absolute h-[110px] w-[150px] ml-[-70px] mt-[-40px]' src={logo} alt="" />
                 </div>
                 
             </div>
