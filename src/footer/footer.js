@@ -16,7 +16,7 @@ AOS.init();
 
 const Footer = () => {
   const {t} = useTranslation()
-  const notify = () => toast("Wow so easy!");
+  // const notify = () => toast("Wow so easy!");
 
 
   const [loading, setloading] = useState(false);
@@ -33,6 +33,7 @@ const Footer = () => {
     const texts = document.getElementById("texts").value;
 
     const messages = `Name : ${name} \n Surname: ${surname} \n TEL: ${tel} \n Texts: ${texts}`
+    
     axios({
       url:url,
       method:'POST',
@@ -43,8 +44,10 @@ const Footer = () => {
     }).then((res)=>{
       document.getElementById("formID").reset();
       // alert("Yuborildi")
+      toast.success("Yuborildi")
     }).catch((error)=>{
-      console.log("Error" , error);
+      // console.log("Error" , error);
+      toast.error("Xato")
     }).finally(()=>{
       setloading(false)
     })
@@ -197,6 +200,7 @@ const Footer = () => {
             className="text-white p-6 rounded-md"
             onSubmit={SendMessage}
             id="formID"
+            required
           >
             <h2 className="text-3xl font-bold mb-4">{t('ariza')}</h2>
             <div className="mb-4">
@@ -219,6 +223,7 @@ const Footer = () => {
                 // value={formData.familiya}
                 // onChange={handleChange}
                 placeholder="Surname"
+                required
                 className="w-full p-3 bg-white text-black rounded-md border focus:ring-2 focus:ring-red-500 focus:outline-none"
               />
             </div>
@@ -227,6 +232,7 @@ const Footer = () => {
                 type="number"
                 name="telefon"
                 id="tel"
+                required
                 // value={formData.telefon}
                 // onChange={handleChange}
                 placeholder="Tel:"
@@ -241,17 +247,18 @@ const Footer = () => {
                 // onChange={handleChange}
                 placeholder="Text"
                 rows="4"
+                required
                 className="w-full p-3 bg-white text-black rounded-md border focus:ring-2 focus:ring-red-500 focus:outline-none"
               />
             </div>
 
             <button
-              onClick={notify}
+              // onClick={notify}
               type="submit" 
               className="w-full bg-red-500 hover:bg-red-600 text-white py-3 rounded-md transition"> { loading ? t('submit') : t('ariza') } </button>
-              <ToastContainer/> 
               {/* alerni bir turi , bir chekkadan chiqib kelishi */}
           </form>
+              <ToastContainer/> 
         </div>
       </div>
     </div>
